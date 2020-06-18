@@ -6,4 +6,4 @@
 
 Dev App(master branch) accessible at: https://node-heroku-example-dev.herokuapp.com/
 
-Prod App(production branch) accessible at: https://node-heroku-example.herokuapp.com/ 
+Prod App(production branch) accessible at: https://node-heroku-example.herokuapp.com/
