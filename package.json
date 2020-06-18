@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist-prod/app.js"
   },
+  "dependencies": {
+    "express": "4.13.1"
+  }
   "author": "",
   "license": "ISC"
 }
