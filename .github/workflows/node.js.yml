@@ -50,5 +50,5 @@ jobs:
           api_key: ${{secrets.HEROKU_API_KEY}}
           email: ${{secrets.HEROKU_EMAIL}}
           app_name: node-heroku-example
-          branch: "master"
+          branch: "refs/heads/master"
           subfolder: "dist-prod"
