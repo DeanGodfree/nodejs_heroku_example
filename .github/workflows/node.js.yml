@@ -36,9 +36,17 @@ jobs:
       uses: snyk/actions/node@master
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-    - name: Deployment
-    - uses: onekiloparsec/heroku-node-deploy-subfolder@v1.0.4
-      with:
+          
+  deploy-prod:
+    runs-on: ubuntu-latest
+    needs: security
+    steps:
+      - uses: actions/checkout@v2
+      # possibly setup node action here...
+      # possibly cache of node modules action here...
+      # build steps here...
+      - uses: onekiloparsec/heroku-node-deploy-subfolder@v1.0.4
+        with:
           api_key: ${{secrets.HEROKU_API_KEY}}
           email: ${{secrets.HEROKU_EMAIL}}
           app_name: node-heroku-example
